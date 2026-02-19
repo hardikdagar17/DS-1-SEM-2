@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practical</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #8B0000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #FFD700;
+        }
+
+        .hex {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hex img {
+            width: 80%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .menu {
+            padding: 20px;
+        }
+
+        .menu h2 {
+            color: #8B0000;
+        }
+
+        ul {
+            list-style-type: square;
+        }
+
+        ul ul {
+            list-style-type: circle;
+        }
+
+        .gallery {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 250px;
+            height: 180px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        .reservation {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .reservation a {
+            background-color: #8B0000;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        .reservation a:hover {
+            background-color: #A52A2A;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Delicious Bites Restaurant</h1>
+    <p>Fresh • Tasty • Authentic</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Menu</a>
+    <a href="#">Gallery</a>
+    <a href="#">Reservation</a>
+</nav>
+
+<section class="hex">
+    <img src="Dining.jpg" alt="Restaurant Image">
+</section>
+
+<section class="menu" id="menu">
+    <h2>Our Menu</h2>
+
+    <ul>
+        <li>Starters
+            <ul>
+                <li>Tomato Soup - ₹120</li>
+                <li>Spring Rolls - ₹150</li>
+                <li>Garlic Bread - ₹100</li>
+            </ul>
+        </li>
+
+        <li>Main Course
+            <ul>
+                <li>Paneer Butter Masala - ₹250</li>
+                <li>Chicken Biryani - ₹300</li>
+                <li>Veg Fried Rice - ₹200</li>
+            </ul>
+        </li>
+
+        <li>Desserts
+            <ul>
+                <li>Gulab Jamun - ₹80</li>
+                <li>Ice Cream - ₹90</li>
+                <li>Chocolate Cake - ₹150</li>
+            </ul>
+        </li>
+
+        <li>Beverages
+            <ul>
+                <li>Cold Coffee - ₹120</li>
+                <li>Lemonade - ₹80</li>
+                <li>Mineral Water - ₹20</li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+<section class="gallery" id="gallery">
+    <h2>Food Gallery</h2>
+    <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Dish 1">
+    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" alt="Dish 2">
+    <img src="https://i.pinimg.com/1200x/fe/a0/ed/fea0ed47f6e40eccc0cec00eb7d4007b.jpg" alt="Dish 3">
+</section>
+
+<section class="reservation" id="reservation">
+    <h2>Reserve Your Table</h2>
+    <p>Book your table now for a wonderful dining experience!</p>
+    <a href="XYZ link">Make a Reservation</a>
+</section>
+
+<footer>
+    <p>© 2026 Delicious Bites Restaurant | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
