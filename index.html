@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>React Counter Application</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: sans-serif;
+      background: #f5f5f5;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      padding: 2rem 2.5rem;
+      text-align: center;
+      min-width: 280px;
+    }
+
+    h2 {
+      margin: 0 0 1rem;
+    }
+
+    #count {
+      font-size: 48px;
+      margin: 1rem 0;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background: #2196f3;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 8px 18px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #1976d2;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <h2>React Counter Application</h2>
+    <div id="count">0</div>
+    <div class="buttons">
+      <button onclick="change(1)">Increment (+)</button>
+      <button onclick="change(-1)">Decrement (-)</button>
+    </div>
+    <button onclick="reset()">Reset</button>
+  </div>
+
+  <script>
+    let count = 0;
+
+    function change(val) {
+      count += val;
+      document.getElementById('count').textContent = count;
+    }
+
+    function reset() {
+      count = 0;
+      document.getElementById('count').textContent = count;
+    }
+  </script>
+</body>
