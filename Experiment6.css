@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#1d2b64,#f8cdda);
+    overflow:hidden;
+}
+
+.card{
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(15px);
+    border-radius:25px;
+    padding:40px;
+    width:360px;
+    text-align:center;
+    box-shadow:0 15px 40px rgba(0,0,0,0.3);
+    animation:fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(30px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+#heading{
+    color:white;
+    font-size:30px;
+    margin-bottom:20px;
+    transition:0.3s;
+}
+
+#inputBox{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:12px;
+    outline:none;
+    margin-bottom:20px;
+    font-size:14px;
+    text-align:center;
+}
+
+#inputBox:focus{
+    transform:scale(1.05);
+}
+
+#para{
+    color:#eee;
+    margin-bottom:20px;
+    font-size:15px;
+}
+
+.buttons{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+}
+
+button{
+    padding:12px;
+    border:none;
+    border-radius:12px;
+    font-size:13px;
+    color:white;
+    cursor:pointer;
+    background:linear-gradient(135deg,#ff6a00,#ee0979);
+    transition:all 0.3s ease;
+}
+
+button:hover{
+    transform:translateY(-4px) scale(1.05);
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
+button:active{
+    transform:scale(0.95);
+}
+
+#btn2{background:linear-gradient(135deg,#00c6ff,#0072ff);}
+#btn3{background:linear-gradient(135deg,#f7971e,#ffd200);}
+#btn4{background:linear-gradient(135deg,#ff416c,#ff4b2b);}
+#btn5{background:linear-gradient(135deg,#8e2de2,#4a00e0);}
